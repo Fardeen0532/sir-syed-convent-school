@@ -1,0 +1,25 @@
+# Sir Syed Convent School Development Tasks
+
+- `[x]` Initialize repository and project folders
+- `[x]` Set up the backend Node.js project
+  - `[x]` Configure backend dependencies (`express`, `sqlite3`, `bcryptjs`, `jsonwebtoken`, `cors`, `helmet`, `express-rate-limit`, `multer`)
+  - `[x]` Write SQLite schema & seed scripts (`database/schema.sql`, `database/seed.js`)
+  - `[x]` Establish database connection & query helper (`backend/app/config/db.js`, `backend/app/models/db_helper.js`)
+  - `[x]` Write middleware modules (`auth.js` for JWT, `upload.js` for file filters)
+  - `[x]` Implement authentication routes (`auth.js`)
+  - `[x]` Implement public API endpoints (`public.js`)
+  - `[x]` Implement admin API endpoints (`admin.js` with dashboard, CSV export)
+  - `[x]` Create server entry point (`server.js`)
+- `[x]` Set up the frontend React + Vite project
+  - `[x]` Initialize Vite React project
+  - `[x]` Configure Vite server proxy to route `/api` to port `5000`
+  - `[x]` Implement global stylesheet (`frontend/src/index.css`) with color system, typography, and styling variables
+  - `[x]` Implement API communication service (`frontend/src/services/api.js`)
+  - `[x]` Create layout systems (`PublicLayout.jsx` and `AdminLayout.jsx`) and core navigation components (`Header.jsx`, `Footer.jsx`, `Sidebar.jsx`)
+  - `[x]` Build public pages (Home, About, Academics, Admissions, Facilities, Faculty, Gallery, Notice Board, Contact)
+  - `[x]` Build admin portal pages (Login, Dashboard, Admissions, Enquiries, Notices, Gallery, Pages, Settings)
+  - `[x]` Set up frontend routing manager (`frontend/src/routes.jsx`, `frontend/src/main.jsx`)
+- `[x]` Verification and Testing
+  - `[x]` Perform backend API testing via sanity checks
+  - `[x]` Validate multi-page routing and form submissions
+  - `[x]` Produce a walkthrough document (`walkthrough.md`)

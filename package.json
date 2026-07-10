@@ -1,0 +1,20 @@
+{
+  "name": "sir-syed-convent-school",
+  "version": "1.0.0",
+  "description": "Sir Syed Convent School – Full-Stack Website & Admin Portal",
+  "private": true,
+  "scripts": {
+    "install:all": "cd backend && npm install && cd ../frontend && npm install",
+    "build": "cd frontend && npm run build",
+    "db:init": "cd backend && npm run db:init",
+    "start": "cd backend && npx cross-env NODE_ENV=production node server.js",
+    "dev:backend": "cd backend && node server.js",
+    "dev:frontend": "cd frontend && npm run dev",
+    "setup": "npm run install:all && npm run db:init && npm run build",
+    "production": "npm run build && npm run start"
+  },
+  "dependencies": {
+    "@tailwindcss/vite": "^4.3.2",
+    "tailwindcss": "^4.3.2"
+  }
+}
